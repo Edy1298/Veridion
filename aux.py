@@ -5,10 +5,8 @@ import spacy
 from time import sleep
 from nltk.corpus import wordnet
 
-# Încarcă modelul NLP
 nlp = spacy.load("en_core_web_md")
 
-# Încarcă lista de cuvinte din JSON
 with open("words.json", "r") as file:
     words = json.load(file)["words"]
 
